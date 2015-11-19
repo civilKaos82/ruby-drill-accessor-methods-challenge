@@ -1,4 +1,4 @@
-require_relative 'company_employee'
+require_relative '../company_employee'
 
 #Every method should be tested!
 describe Employee do
