@@ -21,17 +21,19 @@ As mentioned, our Ruby accessor methods will either return or reassign the value
 *Note:*  This [Stack Overflow answer](http://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer) offers more information on these methods.
 
 
-##Releases
+## Releases
+### Release 0: Write Tests for Behaviors
+We're provided with two functioning classes, which we're later going to refactor.  To ensure that we don't accidentally break our code while refactoring, we'll want to have tests that document the behaviors of each type of object.  We'll use these tests as *regression tests*; they'll ensure that our refactor doesn't change the behavior of our classes.
 
-###Release 0
-Read over the Ruby program provided until you understand the basic structure. You can load it into IRB or [PRY](http://pryrepl.org/) and play around with it if you'd like.
+Read over the code for the `Company` and `Employee` classes.  Then, write tests for their behaviors (see examples in `spec/employee_spec.rb`).  Don't change the code in the classes, just test each of the methods in the classes.
 
-Do not change the code, just write tests for each of the methods in Company and Employee. We'll use these tests as _regression tests_ in Release 1. They'll ensure that our refactor doesn't change the behavior of our classes.
 
-###Release 1 : Replace with attr_helpers
-Identify which methods could be replaced with an `attr_reader`, `attr_writer`, or `attr_accessor` helper and do it.
+### Release 1: Refactor Accessor Methods
+As seen in Figure 1 and described in the *Summary*, Ruby provides helper methods that will generate accessor methods for us:  `attr_reader`, `attr_writer`, and `attr_accessor`.  Which of these methods we use depends on whether we want to generate a reader method, a writer method, or both.
 
-This is a refactor that doesn't change behavior, so you shouldn't need to change your tests in this release. In fact, they'll alert you to any mistakes you make in the refactor.
+We're going to refactor our `Company` and `Employee` classes.  The classes contain long-hand accessor methods (i.e., we've written them ourselves).  Instead of our long-hand methods, we want to make use of Ruby's accessor method-generating helper methods.
+
+*Note:*  This is a refactor.  We won't change behavior; therefore, we shouldn't need to change our tests. In fact, our tests will alert us to any mistakes we make in the refactor which break the behavior of our objects.
 
 ##Resources
 
