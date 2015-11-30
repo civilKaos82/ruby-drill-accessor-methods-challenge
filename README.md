@@ -35,6 +35,6 @@ We're going to refactor our `Company` and `Employee` classes.  The classes conta
 
 *Note:*  This is a refactor.  We won't change behavior; therefore, we shouldn't need to change our tests. In fact, our tests will alert us to any mistakes we make in the refactor which break the behavior of our objects.
 
-##Resources
 
-* [Ruby Accessor Methods](http://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer)
+## Conclusion
+One of the most common behaviors for an object is returning the values of its attributes.  And sometimes, allowing them to be overwritten (e.g., changing a name).  By using Ruby's accessor method-generating helpers, we can succinctly inform our anyone reading our code, which attributes are readable and which are writable.
