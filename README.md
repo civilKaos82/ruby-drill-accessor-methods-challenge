@@ -13,7 +13,7 @@ To make it possible for an object to share the values of its attributes or to ha
 
 
 ### Creating Accessor Methods in Ruby
-![image showing long-hand and short-hand accessor methods](readme-assets/highlight-accessor-methods.gif)  
+![image showing long-hand and short-hand accessor methods](readme-assets/highlight-accessor-methods.gif)
 *Figure 1*.  Short-hand and long-hand approaches to defining accessor methods.
 
 As mentioned, our Ruby accessor methods will either return or reassign the values of an object's attributes.  We could write methods to accomplish either of these, as can be seen in the example code on the righthand side of Figure 1.  However, creating attribute accessor methods is so common that Ruby provides a set of methods which will generate them for us:  reader methods, writer methods, or both.  These methods are utilized in the lefthand side of Figure 1, and they provide the same set of methods that were written long-hand on the righthand side.
@@ -37,4 +37,4 @@ We're going to refactor our `Company` and `Employee` classes.  The classes conta
 
 
 ## Conclusion
-One of the most common behaviors for an object is returning the values of its attributes.  And sometimes, allowing them to be overwritten (e.g., changing a name).  By using Ruby's accessor method-generating helpers, we can succinctly inform our anyone reading our code, which attributes are readable and which are writable.
+One of the most common behaviors for an object is returning the values of its attributes.  And sometimes, allowing them to be overwritten (e.g., changing a name).  By using Ruby's accessor method-generating helpers, we can succinctly inform anyone reading our code which attributes are readable and which are writable.
