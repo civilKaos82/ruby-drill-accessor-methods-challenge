@@ -1,7 +1,7 @@
 require_relative '../employee'
 
 describe Employee do
-  let(:employee) { Employee.new('Elle Gilbert', 'Chief Executive Officer', id: 001) }
+  let(:employee) { Employee.new('Elle Gilbert', 'Chief Executive Officer', 42) }
 
   describe 'the employee\'s name' do
     it 'has a readable name' do
