@@ -1,4 +1,4 @@
-require_relative '../company'
+require_relative "../company"
 
 describe Company do
 end
